@@ -1,474 +1,727 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-
+    <title>GM's Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-    <title>Portfolio - Golam Mostofa (GM)</title>
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/aos.css">
 
-    <!-- Custom fonts for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
-    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
 
-    <!-- Custom styles for this template -->
-    <link href="css/resume.min.css" rel="stylesheet">
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
 
   </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Golam Mostofa</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
 
-  <body id="page-top">
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_100.png);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Golam Mostofa</span></h1>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">Golam</span>
-        <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.png" alt="">
-        </span>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#awards">Research & Awards</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
 
-    <div class="container-fluid p-0">
+						<script>
 
-      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
-        <div class="my-auto">
-          <h1 class="mb-0">Golam
-            <span class="text-primary">Mostofa (GM)</span>
-          </h1>
-          <div class="subheading mb-5">14/1 · Block C · Tajmohol Road · Mohammadpur · Dhaka · +880-1873-372457 ·
-            <a href="mailto:mostofart@gmail.com">mostofart@gmail.com</a>
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Game Developer  ',
+						'YouTuber  ',
+						'Engineer   ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>A Unity3D Game Developer</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://www.youtube.com/@learnwithgm6927"  target="_blank" class="btn btn-primary py-3 px-4">YouTube</a> 
+							<a href="https://github.com/gmostofa" target="_blank" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Golam Mostofa</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Unity3D Game Developer</span></p>
+										<p><span class="title-s">Experience: </span> <span>Around 6 years</span></p>
+										<p><span class="title-s">Address: </span> <span>Dhaka, Bangladesh</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>Unity3D</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>C#</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Javascript</span> <span class="pull-right">55%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Android Development</span> <span class="pull-right">50%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>I am a skilled Unity 3D Game Developer with a passion for creating engaging and visually captivating games. With expertise in C# programming and Unity’s development environment, I excel in designing and implementing dynamic game mechanics and immersive environments. My experience spans the full development cycle, from concept to launch, with a keen eye for detail and performance optimization.
+									Driven by creativity and a love for technology, I thrive in collaborative settings where I can tackle complex challenges and innovate. I’m always exploring new techniques and trends to enhance my skills and contribute to exciting projects. Let’s connect and build the next great gaming experience together!</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Game Development &amp; Gameplay programming</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Bachelor of Engineering</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Bangla</span></li>
+									<li class="d-flex"><span>Other Skills:</span> <span>Firebase, Git, Asana, Google Analytics &amp; Android Development</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Traveling, Travel Photography, Teaching</span></li>
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+
+								<!--<p class="mb-4">
+									<span class="number" data-number="30">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>-->
+
+								<p><a href="https://www.linkedin.com/in/golammostofa007/" target="_blank" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>Detail-oriented Unity 3D Game Developer with a strong background in creating immersive and interactive experiences. Proficient in C# and Unity engine, with a track record of developing engaging gameplay mechanics and optimizing performance. Known for combining technical expertise with creative problem-solving to deliver innovative solutions. Eager to contribute to dynamic projects and advance the field of game development.</p>
           </div>
-          <p class="mb-5">I am a <b>Unity 3D Game Developer</b> with <b>more than 6 years of successful experience</b> building <b> casual, hybrid casual, casual, strategy, puzzle, arcade, action arcade, ASMR experience </b> genre games using <b> Unity 3D, C#, HLSL, Shader Language</b>. Reflecting output by attending requirement sessions, analysing JIRA stories, UAT updates etc. Recognised consistently for performance excellence and contributions to successful delivery. Excellent reputation for resolving problems and improving audiences satisfaction. Increase proficiencies through continuous support and review of code.</p>
-          <ul class="list-inline list-social-icons mb-0">
-            <li class="list-inline-item">
-              <a href="https://www.linkedin.com/in/golammostofa007/" target=”_blank”>
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                </span>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">March/2023-October/2023</span>
+						<h2>Senior Game Programmer</h2>
+						<span class="position">Kolpoverse Studios</span>
+						<p class="mt-4">At Kolpoverse Studios, we strive to cultivate an environment that encourages endless creativity and sparks joy through play. 
+							<ul>
+								<li>As a senior Game programmer, i played a key role in designing and developing hybrid casual games specifically for market testing.</li>
+								<li>Directly collaborated with game designers to ensure the balanced game economy and worked closely with artist to faciliate the timely delivery of assets for development.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">April/2020-February/2023</span>
+						<h2>Game Programmer</h2>
+						<span class="position">Alpha Potato</span>
+						<p class="mt-4">Alpha Potato is a team of passionate professionals, who makes hyper-casual games for mobile devices (Android and iOS). 
+							<ul>
+								<li>Achieved a remarkable milestone by creating "Prank Master 3D", the blockbuster hit that has garnered over 100 million downloads on Android and IOS platforms worldwide.</li>
+								<li>Proficiently developed numerous prototypes of hyper and hybrid casual games from inception to delivery.</li>
+							</ul>
+						</p>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">November/2019-April/2020</span>
+						<h2>Game Trainer(Contractual)</h2>
+						<span class="position">Logical Traingle</span>
+						<p class="mt-4">Logical Traingle is a training institute that trains up students on different development sector. 
+							<ul>
+								<li>As a head trainer of Game Development, i trained around 50+ students on 6 months using Unity3D Game Engine.</li>
+								<li>Worked closely with the students to make them a skilled game developer from scratch to publishing.</li>
+							</ul>
+						</p>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">October/2015-October/2019</span>
+						<h2>Lead Game Programmer</h2>
+						<span class="position">Pechas Game Studios</span>
+						<p class="mt-4">Pechas Game Studios was born out of the love and passion for gaming, focusing on developing unique simulation, sports and strategy games. 
+							<ul>
+								<li>Worked on highly acclaimed project "Goli Cricket", a realtime multiplayer cricket game using unity3d, Gamesparks, Firebase.</li>
+								<li>Contributed to the development of "Cricket Career","Cricket Career Super League", an engaging Cricket managerial journey game.</li>
+							</ul>
+						</p>
+					</div>
+				</div>
+
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2010-2015</span>
+    					<h2>Bachelor of Engineering</h2>
+    					<span class="position">Rajshahi University Of Engineering and Technology</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2008-2010</span>
+    					<h2>Higher Secondary School</h2>
+    					<span class="position">Birgonj Govt High School</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+				</div>
+    		</div>
+
+			<!--
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>-->
+
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Below are some of the projects i have worked on.</p>
+          </div>
+        </div>
+
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://play.google.com/store/apps/details?id=com.alphapotato.prankster" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/proj_1.png');">
               </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://github.com/gmostofa" target=”_blank”>
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://www.instagram.com/mostofa.gm/" target=”_blank”>
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://www.facebook.com/golammostofa007/" target=”_blank”>
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+              <div class="text mt-3 float-right d-block">
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
-        <div class="my-auto">
-          <h2 class="mb-5">Experience</h2>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Software Engineer - Level 2</h3>
-              <a href="https://brainstation-23.com/" target=”_blank”><div class="subheading mb-3">Brain Station 23</div></a>
-              <p>I am working on Banglalink's latest Telco features and make them market ready with the expertise of my team.</p>
-              <h6>Key Responsibilities:</h6>
-              <ul>
-                <li>Story grooming and planning with respective product owners.</li>
-                <li>Regular support of product UAT with more accuracy.</li>
-                <li>Learn and implement new tech into product.</li>
-              </ul>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">January 2023 - Present</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Software Engineer</h3>
-              <a href="https://brainstation-23.com/" target=”_blank”><div class="subheading mb-3">Brain Station 23</div></a>
-              <p>I have worked with the Banglalink client team as well as will engage with internal development too. We build robust and reliable solutions.</p>
-              <h6>Key Responsibilities:</h6>
-              <ul>
-                <li>Engage with the client and analyse business requirements along with the team.</li>
-                <li>Make a reliable solution with the team members and perform regular code revision and knowledge transfer.</li>
-                <li>Discuss sprint tasks and make a proper timeline with efficient deliverables.</li>
-              </ul>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">April 2022 - December 2023</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Software Engineer</h3>
-              <a href="https://bangladesh.savethechildren.net/" target=”_blank”><div class="subheading mb-3">Save the Children in Bangladesh</div></a>
-              <p>Ever since I joined, I have worked on several national and international projects. Maintaining good communication with clients and satisfying the end-user was the main goal. Regularly participated in on-call rotation and resolved various incidents/issues. Recognized significant issues in those services, produced designs and executed the solution from end to end.</p>
-              <h6>Key Responsibilities:</h6>
-              <ul>
-                <li>Successfully delivered three LMS and 1 MIS with several modules working as a single developer. Modules like quiz, assessment, dashboard, quality benchmark etc.</li>
-                <li>Scaling the system with proper architecture like micro-service asynchronous architecture.</li>
-                <li>Directly developing solutions with the field user.</li>
-              </ul>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">February 2021 - April 2022</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Team Lead - Game Development</h3>
-              <a href="https://bangladesh.savethechildren.net/" target=”_blank”><div class="subheading mb-3">Save the Children in Bangladesh</div></a>
-              <p>A good opportunity to work with such a versatile world leading INGO. They have a huge backed IT team, where they provide several solution for all over the world. We work there with several projects like the Rohingya issue, HIV, Child Care, Empowering Girls Through Education, etc.</p>
-              <h6>Key Responsibilities:</h6>
-              <ul>
-                <li>Delivered a fully customisable quality benchmark module to perform survey on several questions and sync those data to server for future report.</li>
-                <li>Developed a content player for a learning app where a student can play any kind of content like video, audio, doc or ppt etc.</li>
-                <li>Participated frequent client meetings and field visits.</li>
-              </ul>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">February 2019 - November 2020</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Lead Game Programmer</h3>
-              <div class="subheading mb-3">Pechas Game Studios.</div>
-              <p>As First job got to meet some amazing people, where i have got the industry professional experiences, and after completing all states of learning i have become the team lead here.</p>
-              <h6>Key Responsibilities</h6>
-              <ul>
-                <li>Worked on the highly acclaimed project <b>"Goli Cricket</b>" a real time multiplayer cricket game developed for Robi, created the multiplayer bone using Gamesparks Multiplayer service for Unity.</li>
-                <li>Worked on Bangladesh's first ever Strategic Cricket Game <b>"Cricket Career Super League"</b> by Reliance Entertainment, India, created the backend of huge simulation data of cricketers of the world and manage simulation.  </li>
-              </ul>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">October 2015 - October 2019</span>
-            </div>
-          </div>
-
-        </div>
-
-      </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
-        <div class="my-auto">
-          <h2 class="mb-5">Education</h2>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Daffodil International University</h3>
-              <div class="subheading mb-3">Bachelor of Science</div>
-              <div>Software Engineering</div>
-              <p>GPA: 3.94</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">September 2015 - December 2019</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Jahangirnagar University</h3>
-              <div class="subheading mb-3">Weekend Masters</div>
-              <div>Applied Statistics and Data Science</div>
-              <p>GPA: 3.20</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">April 2022 - May 2023</span>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
-        <div class="my-auto">
-          <h2 class="mb-5">Skills</h2>
-
-          <div class="subheading mb-3">Programming Languages</div>
-          <ul class="list-inline list-icons">
-            <li class="list-inline-item">
-              <i class="devicon-kotlin-plain"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicon-java-plain"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicon-flutter-plain"></i>
-            </li>
-          </ul>
-
-          <div class="subheading mb-3">Tools, Technologies and &amp; IDE's</div>
-          <ul class="list-inline list-icons">
-            <li class="list-inline-item">
-              <i class="devicon-android-plain"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicon-androidstudio-plain"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicon-xcode-plain"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicon-firebase-plain"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicon-git-plain"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicon-jira-plain"></i>
-            </li>
-          </ul>
-
-          <!-- <div class="subheading mb-3">Workflow</div>
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Mobile-First, Responsive Design</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Cross Browser Testing &amp; Debugging</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Cross Functional Teams</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Agile Development &amp; Scrum</li>
-          </ul> -->
-        </div>
-      </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
-        <div class="my-auto">
-          <h2 class="mb-5">Interests</h2>
-          <p>🌱 I’m currently learning diffent <b>architectural components</b> in mobile application development.</p>
-          <p>👯 I’m looking to collaborate on any kind to <b>open source project</b> related to the field of software engineering.</p>
-          <p>Apart from being a android developer, I enjoy most of my time being outdoors. In the winter, I <b>love to travel a lot</b>, which pushed me to make travel related videogrpahy and I do share my travel experience in my own Youtube channel, which is <a href="https://www.youtube.com/@traveloutsider" target=”_blank”>Travel Outsider</a>.</p>
-          <p class="mb-0">Apart from travelling <b>I do love playing cricket</b>. As a cricket loving nation its kind of obvious for most of us to involv in playing cricket. One of my favorite cricket player is Shakib Al Hasan.</p>
-        </div>
-      </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
-        <div class="my-auto">
-          <h2 class="mb-5">Research &amp; Awards</h2>
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li fa fa-lightbulb-o text-warning"></i>
-              Research Associate - <b>Ambient Intelligence Lab</b>
-              <div class="resume-date text-md-left">
-                <span class="text-primary">February 2019 - November 2020</span>
+                <h3 class="heading"><a href="https://play.google.com/store/apps/details?id=com.alphapotato.prankster" target="_blank">Prank Master 3D (Android)</a></h3>
+                <p>Creator of this blockbuster hit game from scratch to publishing. It was published one of the most famous publisher "Lion Studios".</p>
               </div>
-              <p>I contributed to my previous group's work. This thesis was <b>under the supervision of Mr. K. M. Imtiaz-Ud-Din</b> who is an <b>Assistant Professor Department of Software Engineering, DIU</b>. We intend to establish an architecture where the user will get his/her needs by himself/herself. My part was to build an adaptation engine that adapts any changes into the system and responds to that change.</p>
-              <h6>Key Responsibilities:</h6>
-              <ul>
-                <li>Updated modules using <a href="https://developers.google.com/blockly">Blockly</a> with dynamic changing blocks.</li>
-                <li>Develop few blocks like time, nested conditional if statements etc for future work.</li>
-                <li>Participated and conducted few session to next level researchers(Academic Juniors) to carry out future enhancements.</li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
-        <div class="my-auto">
-          <h2 class="mb-5">Projects</h2>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <ul class="fa-ul mb-0">
-              <li>
-                <i class="fa-li fa fa-lightbulb-o text-warning"></i>
-                MyBL (My Banglalink) - <a href="https://play.google.com/store/apps/details?id=com.arena.banglalinkmela.app" target="_blank"><b>See Live Here</b></a>
-                <div class="resume-date text-md-left">
-                  <span class="text-primary">April 2022 - Present</span>
-                </div>
-                <p>This project is a part of my current organization role. My goal was to develop their latest business requirements, performing peer code reviews, handling UAT, sprint planning's.
-                  <a href="https://www.banglalink.net/en" target="_blank"><b>Banglalink</b></a> is one the popular Telco-Service in Bangladesh. MyBL is the digital solution for Banglalink, which helps them to reach customers with digital services like recharge to customer no, purchasing telco packs, availing special offers, access music, games and so many features.</p>
-                <h6>Key Features or Contributions:</h6>
-                <ul>
-                  <li>Currently working on MyBL loyalty platform, where user can redeem coins, avail special offer or partner offers, upgrade loyalty level, see their current loyalty status etc.</li>
-                  <li>Developed Ramadan info widget for the Ramadan month and prayer timings.</li>
-                  <li>Integrated free data pack services when user has low amount and internet.</li>
-                  <li>Developed User Plans module, where user can purchase internet, minute, bundle, special offers by his mobile balance.</li>
-                  <li>Developed user balance summary section, where user can see his small dashboard with remaining balance, internet , SMS and other activates services.</li>
-                  <li>Upgraded to Android SDK level 31 from old SDK version.</li>
-                  <li>Updated user recharge module with loan due journey, where user can see his loan dues and avail some other packages.</li>
-                  <li>Developed popular packages module where user can purchase trending packs.</li>
-                  <li>Integrated pack purchase with mobile balance and buy with recharge module, where user can avail a specific pack.</li>
-                </ul>
-              </li>
-            </ul>
+            </div>
           </div>
 
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <ul class="fa-ul mb-0">
-              <li>
-                <i class="fa-li fa fa-lightbulb-o text-warning"></i>
-                Learning Tree - <a href="https://play.google.com/store/apps/details?id=com.savethechildren.learning_tree" target="_blank"><b>See Live Here</b></a>
-                <div class="resume-date text-md-left">
-                  <span class="text-primary">November 2021 - April 2022</span>
-                </div>
-                <p>A part of my previous organization role. Learning Tree aims to support teacher’s professional development and caregiver learning and bolster distance learning. The app will constitute of two types of users- Teachers & Caregivers.</p>
-                <h6>Key Features or Contributions:</h6>
-                <ul>
-                  <li>Developed a quiz module, where a caregiver or teacher can perform a quiz and based on the quiz result he or she assigned a level.</li>
-                  <li>Delivered a module which provides learning resources based on level and track progress to level up for the upper one.</li>
-                  <li>Track and sync content watching meta data with server based on the internet availability.</li>
-                </ul>
-              </li>
-            </ul>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://apps.apple.com/us/app/prank-master-3d/id1528127833" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/proj_2.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://apps.apple.com/us/app/prank-master-3d/id1528127833" target="_blank">Prank Master 3D (IOS)</a></h3>
+                <p>Creator of this blockbuster hit game from scratch to publishing. It was published one of the most famous publisher "Lion Studios".</p>
+              </div>
+            </div>
           </div>
 
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <ul class="fa-ul mb-0">
-              <li>
-                <i class="fa-li fa fa-lightbulb-o text-warning"></i>
-                ECW LMS - <a href="https://play.google.com/store/apps/details?id=ecw.lms.savethechildren.bangladesh" target="_blank"><b>See Live Here</b></a>
-                <div class="resume-date text-md-left">
-                  <span class="text-primary">November 2021 - April 2022</span>
-                </div>
-                <p>A part of my previous organization role. The outcome of the project was to provide education to the unprivileged people specially the Rohingya People in Bangladesh. This app provides videos, audios and documents based learning contents to them which eventually helps the to educate themselves.</p>
-                <h6>Key Features or Contributions:</h6>
-                <ul>
-                  <li>Developed quiz module for practicing some random set of questions.</li>
-                  <li>Developed assessment which occurs only three times in a year and there were multiple set of questions which were locked with password.</li>
-                  <li>Developed a course view module where student can watch contents like videos, audios, docs etc.</li>
-                  <li>Performed UAT by visiting the field and taking sessions on how to use the solution.</li>
-                  <li>Upgraded firebase libraries to use latest platforms.</li>
-                </ul>
-              </li>
-            </ul>
-          </div>
+		  <div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry justify-content-end">
+			<a href="https://play.google.com/store/apps/details?id=com.zapak.cc.superleague" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/proj_9.png');">
+			</a>
+			<div class="text mt-3 float-right d-block">
 
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <ul class="fa-ul mb-0">
-              <li>
-                <i class="fa-li fa fa-lightbulb-o text-warning"></i>
-                ভাড়া আদায় - Rent Collector - <a href="https://play.google.com/store/apps/details?id=com.shakil.barivara" target="_blank"><b>See Live Here</b></a>
-                <div class="resume-date text-md-left">
-                  <span class="text-primary">June 2021 - Present</span>
-                </div>
-                <p>This app is one of my pet projects, that I have been working one since last one and half year.Rent Collector With this application a landlord will be able to manage all the calculations of how much money he has rented, which tenant has not paid rent, which tenant has not rented a house in any month.</p>
-                <h6>Key Features or Contributions:</h6>
-                <ul>
-                  <li>Authentication with mobile or email. Password resetting by email.</li>
-                  <li>Add tenant, room, meter and other utilities information within a single tap.</li>
-                  <li>Generate monthly rent bill and send through SMS.</li>
-                  <li>Full fledged dashboard.</li>
-                </ul>
-              </li>
-            </ul>
-          </div>
+			  <h3 class="heading"><a href="https://play.google.com/store/apps/details?id=com.zapak.cc.superleague" target="_blank">Cricket Career Super League</a></h3>
+			  <p>Created the cricket gameplay experiences and a data management backend to simulate a lots of player career data using Unity3D.</p>
+			</div>
+		  </div>
+		</div>
 
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <ul class="fa-ul mb-0">
-              <li>
-                <i class="fa-li fa fa-lightbulb-o text-warning"></i>
-                Git Lib - <a href="https://play.google.com/store/apps/details?id=app.com.gitlib" target="_blank"><b>See Live Here</b></a>
-                <div class="resume-date text-md-left">
-                  <span class="text-primary">Jan 2021 - Present</span>
-                </div>
-                <p>Git Lib which is developed with a good motive to provide the developers trending GitHub libraries or open source resources. This application has all the feature that you need whether you want to know the trending GitHub repositories or developers or any other categorized libraries. Following are some of the top functionalities that you can get.</p>
-                <h6>Key Features or Contributions:</h6>
-                <ul>
-                  <li>Get Daily Frequent Randomly Quiz question about information technology.</li>
-                  <li>Trending Developers, Repositories, Languages in GitHub.</li>
-                  <li>Used GitHub open source API which includes developer search, profile view etc.</li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <ul class="fa-ul mb-0">
-              <li>
-                <i class="fa-li fa fa-lightbulb-o text-warning"></i>
-                Magica Maids - <a href="https://play.google.com/store/apps/details?id=com.home.service.magica_maids.magica_maids" target="_blank"><b>See Live Here</b></a>
-                <div class="resume-date text-md-left">
-                  <span class="text-primary">Jan 2021 - Present</span>
-                </div>
-                <p>Developed this app solely for a Ireland based Software Firm named Amharc Tech for one of their client. Used technologies are, flutter, stripe (payment gateway), rest api.</p>
-                <h6>Key Features or Contributions:</h6>
-                <ul>
-                  <li>Developed authentication system including forgot pass, change pass.</li>
-                  <li>Integrated stripe payment gateway system by which one can pay for their service.</li>
-                  <li>Integrated firebase one to one messaging service for client and customer.</li>
-                  <li>Developed few more features like job searching, apply to job, track job status.</li>
-                </ul>
-              </li>
-            </ul>
-          </div>
 
         </div>
-      </section>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex justify-content-center">  
 
-    </div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://www.youtube.com/watch?v=VfEryuvHmTQ" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/proj_8.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://www.youtube.com/watch?v=VfEryuvHmTQ" target="_blank">Goli Cricket</a></h3>
+				  <p>Created the Realtime Multiplayer experience using Gamesparks, Firebase and unity3D.</p>
+				</div>
+			  </div>
+			</div>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://play.google.com/store/apps/details?id=com.kolpoverse.mergecitypuzzle" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/proj_5.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://play.google.com/store/apps/details?id=com.kolpoverse.mergecitypuzzle" target="_blank">Merge City Puzzle</a></h3>
+				  <p>Created the merge system and gameplay and a independent module of merge mechanics that can used anywhere.</p>
+				</div>
+			  </div>
+			</div>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/resume.min.js"></script>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://play.google.com/store/apps/details?id=com.kolpoverse.kitchenhero" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/proj_6.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://play.google.com/store/apps/details?id=com.kolpoverse.kitchenhero" target="_blank">Kitchen Hero</a></h3>
+				  <p>Created the arcade idle mechanics with gameplay for testing.</p>
+				</div>
+			  </div>
+			</div>
 
+		 </div>
+
+		 <br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex justify-content-center">  
+
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://play.google.com/store/apps/details?id=com.kolpoverse.clubowner" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/proj_7.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://play.google.com/store/apps/details?id=com.kolpoverse.clubowner" target="_blank">Club Owner</a></h3>
+				  <p>Created idle game mechanics with some short side gameplay to engage the users.</p>
+				</div>
+			  </div>
+			</div>
+
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://play.google.com/store/apps/details?id=com.alphapotato.willitdrill" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/proj_4.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://play.google.com/store/apps/details?id=com.alphapotato.willitdrill" target="_blank">Will It Drill</a></h3>
+				  <p>Used Mesh and Vertics Manipulation to create the drill effect on different set up drill object.</p>
+				</div>
+			  </div>
+			</div>
+
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry">
+				<a href="https://play.google.com/store/apps/details?id=com.alphapotato.channelsurfer" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/proj_3.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://play.google.com/store/apps/details?id=com.alphapotato.channelsurfer" target="_blank">Channel Surfer</a></h3>
+				  <p>Hyper casual prototype for market testing.</p>
+				</div>
+			  </div>
+			</div>
+
+		 </div>
+
+	  </div>
+    </section>
+
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+		<!--
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="20">0</strong>
+                <span>Achievements</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="30">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="1000">0</strong>
+                <span>Mentored Students</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="500">0</strong>
+                <span>Cups of coffee</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	-->
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4> I love to solve problems in various ways &amp; try to give the feel of pure gaming experience </h4>
+						<br>
+						<p><a href="https://github.com/gmostofa" target="_blank" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-4 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Dhaka, Bangladesh</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://+8801716005858">+ 88 017 160 5858</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:info@yoursite.com">mostofart@gmail.com</a></p>
+	          </div>
+          </div>
+
+		  <!--
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="#">resumelink</a></p>
+	          </div>
+          </div>
+		-->
+
+		  <div class="container">
+			<br>
+			<br>
+
+			<!--<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/uLaTShUKXraAvHJ77" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div>-->
+
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <li class="ftco-animate"><a href="https://www.youtube.com/@learnwithgm6927" target="_blank"><span class="icon-youtube"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/golammostofa007/" target="_blank"><span class="icon-linkedin"></span></a></li> 
+
+					<!-- <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-twitter"></span></a></li>
+					  <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-facebook"></span></a></li>
+				      <li class="ftco-animate"><a href="https://www.instagram.com/rishabhnmishra/"><span class="icon-instagram"></span></a></li>-->
+
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
   </body>
-
 </html>
