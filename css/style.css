@@ -8828,7 +8828,8 @@ h1, h2, h3, h4, h5,
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 3px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    color: #ffbd39;}
 
 .services-1 {
   margin-bottom: 40px;
@@ -9335,7 +9336,8 @@ textarea.form-control {
     .blog-entry .text .heading {
       font-size: 20px;
       margin-bottom: 16px;
-      font-weight: 500; }
+      font-weight: 500;
+      color: #ffbd39;}
       .blog-entry .text .heading a {
         color: #fff; }
         .blog-entry .text .heading a:hover, .blog-entry .text .heading a:focus, .blog-entry .text .heading a:active {
